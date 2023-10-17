@@ -4,6 +4,10 @@
 
 <hr>
 
+<div>
+  <%= link_to "Add a new movie", new_movie_path %>
+</div>
+
   <% @movies.each do |movie| %>
     <div class="col-md-3">
       <%= render partial: "movies/movie", locals: { movie: movie } %>
